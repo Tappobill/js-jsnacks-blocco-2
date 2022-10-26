@@ -5,11 +5,11 @@ let vuota = [];
 let nomi = ["Mario", "Chri", "Ale"];
 let cognomi = ["Rossi", "Blue", "Verde"];
 
-let random = Math.floor(Math.random()*nomi.length);
-let random1 =  Math.floor(Math.random()*cognomi.length);
-let rvalue1 = nomi[random];
-let rvalue = cognomi[random1];
-vuota.push(rvalue + " " + rvalue1);
-console.log(vuota);
+for (let i = 0; i < nomi.length; i++) {
+    let random = Math.floor(Math.random() * nomi.length);
+    let random1 = Math.floor(Math.random() * cognomi.length);
+    console.log(`il dato composto è: ${nomi[random]} ${cognomi[random1]}`)
+    vuota.push(`${nomi[random]} ${cognomi[random1]}`)
+}
 
 
